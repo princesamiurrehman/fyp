@@ -11,7 +11,16 @@
 			"src": "build_files.sh",
 			"use": "@vercel/static-build"
 		}
-	]
+	],
+	"routes": [
+		{
+			"src": "/static/(.*)",
+			"dest": "/static/$1"
+		},
+		{
+			"src": "/(.*)",
+			"dest": "easysnp/wsgi.py"
+		}
 		
 	
 }
