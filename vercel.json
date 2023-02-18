@@ -4,7 +4,7 @@
 	"builds": [
 		{
 			"src": "easysnp/wsgi.py",
-			"use": "/static-build",
+			"use": "",
 			"config": {"maxLambdaSize": "15mb", "runtime": "python3.8"}
 		},
 		{
