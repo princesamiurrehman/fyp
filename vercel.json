@@ -4,7 +4,7 @@
 	"builds": [
 		{
 			"src": "easysnp/wsgi.py",
-			"user": "@vercel/python",
+			"use": "@vercel/static-build",
 			"config": {"maxLambdaSize": "15mb", "runtime": "python3.8"}
 		},
 		{
